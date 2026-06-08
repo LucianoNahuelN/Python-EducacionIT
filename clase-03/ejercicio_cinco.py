@@ -43,12 +43,12 @@ while True:
         agregar_nota_lista(nota)
     
     
-    if cantidad_elementos(notas) == 0:
-            print("No se cargaron notas")
-    else:
-        total = calcular_total_notas(notas)
-        cant_elementos = cantidad_elementos(notas)
-        promedio = round(calcular_promedio_notas(total, cant_elementos), 2)
+if cantidad_elementos(notas) == 0:
+    print("No se cargaron notas")
+else:
+    total = calcular_total_notas(notas)
+    cant_elementos = cantidad_elementos(notas)
+    promedio = round(calcular_promedio_notas(total, cant_elementos), 2)
         
 if promedio >= 4:
     imprimir_notas(notas)
